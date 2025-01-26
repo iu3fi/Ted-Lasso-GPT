@@ -42,7 +42,7 @@ pip install transformers datasets torch
 ```
 
 ### 3. Download or Prepare the Dataset
-Place the CSV dataset (`TLDS.csv`) in the project directory. Ensure it has the following columns:
+Place the CSV dataset (`Dataset.csv`) in the project directory. Ensure it has the following columns:
 - `questions`: User questions or inputs.
 - `answers`: Ted Lasso-style responses.
 
@@ -52,7 +52,7 @@ Place the CSV dataset (`TLDS.csv`) in the project directory. Ensure it has the f
 
 ### 1. Train the Model
 To fine-tune the GPT-2 model:
-1. Open `train_chatbot.ipynb` in Google Colab.
+1. Open `TedGPT.py` in Google Colab.
 2. Follow the step-by-step instructions in the notebook to fine-tune the model.
 3. Save the fine-tuned model to Google Drive or your local machine.
 
@@ -112,9 +112,8 @@ Ted Lasso Bot: Take care! You're amazing!
 
 ## Project Structure
 ```
-├── TLDS.csv                # Dataset file
-├── train_chatbot.ipynb     # Colab notebook for fine-tuning
-├── chatbot.py              # Python script for running the chatbot
+├── Dataset.csv                # Dataset file
+├── TedGPT.py     # Python script for running the chatbot
 ├── README.md               # Project documentation
 ```
 
